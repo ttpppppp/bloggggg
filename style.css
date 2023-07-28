@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--font-family);
+    outline: none;
+    border: none;
+}
+:root{
+    --font-family: 'Mulish', sans-serif;
+    --main-color: #001860;
+    --body-color: #616161;
+    --white-color: #ffffff;
+    --bs-orange: #fd7e14;
+    --back-color: #000000;
+    --transition: all ease .5s;
+    --border-radiaus: 4px;
+    --box-shadow: 0 0 20px 3px rgba(0,0,0,0.05);
+}
+header{
+    background-color: #181818;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 92px;
+    padding: 10px 50px;
+}
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.logo{
+    width: 180px;
+}
+.logo img{
+    width: 100%;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-right: 135px;
+}
+.menu li{
+    transition: var(--transition);
+}
+.menu li a{
+    font-size: 14px;
+    color: #ffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menu li:hover{
+    transform: translateY(8px);
+}
+.hero{
+    background-color: #131313;
+    margin-top: 90px;
+    padding: 20px 0px 20px 0px;
+    height: 100vh;
+}
+.hero-content{
+    display: grid;
+    grid-template-columns: 66.666% 33.333%;
+    column-gap: 30px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 30px;
+}
+.hero-left h2{
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.hero-left p{
+    color: #8B8B8B;
+    margin-bottom: 30px;
+    line-height:1.5;
+    font-size: 14px;
+}
+.hero-left span{
+    color: #ffffff;
+}
+.hero-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-right img{
+    width: 100%;
+    height: auto;
+}
